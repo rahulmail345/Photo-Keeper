@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <table class="table">
+            <thead class="thead-inverse">
+            <tr>
+                <th class="text-center">User ID</th>
+                <th class="text-center">Username</th>
+                <th class="text-center">Name</th>
+                <th class="text-center">Email</th>
+                <th class="text-center">Address</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let user of _usersArray">
+                <td class="text-center" style="width: 15px;">{{user.id}}</td>
+                <td class="text-center" style="width: 15px;">{{user.name}}</td>
+                <td class="text-center" style="width: 15px;">{{user.username}}</td>
+                <td class="text-center" style="width: 200px;">{{user.email}}</td>
+                <td class="text-center">{{user.address.street}}, {{user.address.suute}}, {{user.address.city}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
